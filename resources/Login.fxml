@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="600.0" prefWidth="700.0" style="-fx-background-color: transparent;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="DIOpenJFX.MainController">
+   <children>
+      <AnchorPane layoutX="16.0" layoutY="49.0" prefHeight="488.0" prefWidth="613.0" style="-fx-background-color: transparent;" AnchorPane.bottomAnchor="47.0" AnchorPane.leftAnchor="23.0" AnchorPane.rightAnchor="23.0" AnchorPane.topAnchor="47.0">
+         <children>
+            <AnchorPane layoutX="298.0" layoutY="39.0" maxWidth="317.0" prefHeight="412.0" prefWidth="317.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="55.0" AnchorPane.leftAnchor="298.0" AnchorPane.rightAnchor="39.0" AnchorPane.topAnchor="39.0">
+               <children>
+                  <Label layoutX="58.0" layoutY="38.0" prefHeight="25.0" prefWidth="83.0" text="Sign In" AnchorPane.leftAnchor="58.0" AnchorPane.rightAnchor="176.0" AnchorPane.topAnchor="38.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="inpName" focusColor="#4ffccb" labelFloat="true" layoutX="57.0" layoutY="105.0" prefHeight="40.0" prefWidth="244.0" promptText="Nombre" unFocusColor="BLACK" AnchorPane.leftAnchor="57.0" AnchorPane.rightAnchor="16.0" />
+                  <JFXTextField fx:id="inpEmail" focusColor="#4ffccb" labelFloat="true" layoutX="57.0" layoutY="186.0" prefHeight="40.0" prefWidth="244.0" promptText="Email" unFocusColor="BLACK" AnchorPane.leftAnchor="57.0" AnchorPane.rightAnchor="16.0" />
+                  <JFXPasswordField fx:id="inpPassword" focusColor="#4ffccb" layoutX="58.0" layoutY="261.0" prefHeight="40.0" prefWidth="244.0" promptText="Contraseña" unFocusColor="BLACK" AnchorPane.leftAnchor="57.0" AnchorPane.rightAnchor="16.0" />
+                  <JFXButton fx:id="btnSignin" buttonType="RAISED" layoutX="57.0" layoutY="348.0" onAction="#handleSignIn" prefHeight="49.0" prefWidth="92.0" ripplerFill="WHITE" style="-fx-background-color: orange; -fx-background-radius: 1em;" text="Sign In" />
+                  <JFXButton fx:id="closeButton" layoutX="267.0" layoutY="13.0" onAction="#closeButtonAction" prefHeight="25.0" prefWidth="26.0" text="X" textFill="RED" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="13.0">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="9.0" layoutY="10.0" prefHeight="451.0" prefWidth="317.0" style="-fx-background-color: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12); -fx-background-radius: 1em;" AnchorPane.bottomAnchor="36.0" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="19.0">
+               <children>
+                  <VBox alignment="CENTER_LEFT" layoutX="62.0" layoutY="116.0" prefHeight="219.0" prefWidth="194.0">
+                     <children>
+                        <Label alignment="CENTER" text="Cristina Izquierdo :D" textFill="WHITE">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" text="OPENJFX" textFill="WHITE">
+                           <font>
+                              <Font size="28.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" text="2º DAM " textFill="WHITE">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
